@@ -1,0 +1,144 @@
+RESTART
+
+UNITS TIME=fs
+
+p1: POSITION ATOM=1
+p2: POSITION ATOM=2
+p3: POSITION ATOM=3
+p4: POSITION ATOM=4
+p5: POSITION ATOM=5
+p6: POSITION ATOM=6
+p7: POSITION ATOM=7
+p8: POSITION ATOM=8
+p9: POSITION ATOM=9
+p10: POSITION ATOM=10
+p11: POSITION ATOM=11
+p12: POSITION ATOM=12
+p13: POSITION ATOM=13
+p14: POSITION ATOM=14
+p15: POSITION ATOM=15
+p16: POSITION ATOM=16
+p17: POSITION ATOM=17
+p18: POSITION ATOM=18
+p19: POSITION ATOM=19
+p20: POSITION ATOM=20
+p21: POSITION ATOM=21
+p22: POSITION ATOM=22
+p23: POSITION ATOM=23
+p24: POSITION ATOM=24
+p25: POSITION ATOM=25
+p26: POSITION ATOM=26
+p27: POSITION ATOM=27
+p28: POSITION ATOM=28
+p29: POSITION ATOM=29
+p30: POSITION ATOM=30
+p31: POSITION ATOM=31
+p32: POSITION ATOM=32
+p33: POSITION ATOM=33
+p34: POSITION ATOM=34
+p35: POSITION ATOM=35
+p36: POSITION ATOM=36
+p37: POSITION ATOM=37
+p38: POSITION ATOM=38
+p39: POSITION ATOM=39
+p40: POSITION ATOM=40
+p41: POSITION ATOM=41
+p42: POSITION ATOM=42
+p43: POSITION ATOM=43
+p44: POSITION ATOM=44
+p45: POSITION ATOM=45
+p46: POSITION ATOM=46
+p47: POSITION ATOM=47
+p48: POSITION ATOM=48
+p49: POSITION ATOM=49
+p50: POSITION ATOM=50
+p51: POSITION ATOM=51
+p52: POSITION ATOM=52
+p53: POSITION ATOM=53
+p54: POSITION ATOM=54
+p55: POSITION ATOM=55
+p56: POSITION ATOM=56
+p57: POSITION ATOM=57
+p58: POSITION ATOM=58
+p59: POSITION ATOM=59
+p60: POSITION ATOM=60
+p61: POSITION ATOM=61
+p62: POSITION ATOM=62
+p63: POSITION ATOM=63
+p64: POSITION ATOM=64
+p65: POSITION ATOM=65
+p66: POSITION ATOM=66
+p67: POSITION ATOM=67
+p68: POSITION ATOM=68
+p69: POSITION ATOM=69
+p70: POSITION ATOM=70
+p71: POSITION ATOM=71
+p72: POSITION ATOM=72
+p73: POSITION ATOM=73
+p74: POSITION ATOM=74
+p75: POSITION ATOM=75
+p76: POSITION ATOM=76
+p77: POSITION ATOM=77
+p78: POSITION ATOM=78
+p79: POSITION ATOM=79
+p80: POSITION ATOM=80
+p81: POSITION ATOM=81
+p82: POSITION ATOM=82
+p83: POSITION ATOM=83
+p84: POSITION ATOM=84
+p85: POSITION ATOM=85
+p86: POSITION ATOM=86
+p87: POSITION ATOM=87
+p88: POSITION ATOM=88
+p89: POSITION ATOM=89
+p90: POSITION ATOM=90
+p91: POSITION ATOM=91
+p92: POSITION ATOM=92
+p93: POSITION ATOM=93
+p94: POSITION ATOM=94
+p95: POSITION ATOM=95
+p96: POSITION ATOM=96
+p97: POSITION ATOM=97
+p98: POSITION ATOM=98
+p99: POSITION ATOM=99
+p100: POSITION ATOM=100
+p101: POSITION ATOM=101
+p102: POSITION ATOM=102
+p103: POSITION ATOM=103
+p104: POSITION ATOM=104
+p105: POSITION ATOM=105
+p106: POSITION ATOM=106
+p107: POSITION ATOM=107
+p108: POSITION ATOM=108
+p109: POSITION ATOM=109
+p110: POSITION ATOM=110
+p111: POSITION ATOM=111
+p112: POSITION ATOM=112
+p113: POSITION ATOM=113
+p114: POSITION ATOM=114
+p115: POSITION ATOM=115
+p116: POSITION ATOM=116
+p117: POSITION ATOM=117
+p118: POSITION ATOM=118
+p119: POSITION ATOM=119
+p120: POSITION ATOM=120
+p121: POSITION ATOM=121
+cv: CUSTOM ...
+   ARG=p1.z,p2.z,p3.z,p4.z,p5.z,p6.z,p7.z,p8.z,p9.z,p10.z,p11.z,p12.z,p13.z,p14.z,p15.z,p16.z,p17.z,p18.z,p19.z,p20.z,p21.z,p22.z,p23.z,p24.z,p25.z,p26.z,p27.z,p28.z,p29.z,p30.z,p31.z,p32.z,p33.z,p34.z,p35.z,p36.z,p37.z,p38.z,p39.z,p40.z,p41.z,p42.z,p43.z,p44.z,p45.z,p46.z,p47.z,p48.z,p49.z,p50.z,p51.z,p52.z,p53.z,p54.z,p55.z,p56.z,p57.z,p58.z,p59.z,p60.z,p61.z,p62.z,p63.z,p64.z,p65.z,p66.z,p67.z,p68.z,p69.z,p70.z,p71.z,p72.z,p73.z,p74.z,p75.z,p76.z,p77.z,p78.z,p79.z,p80.z,p81.z,p82.z,p83.z,p84.z,p85.z,p86.z,p87.z,p88.z,p89.z,p90.z,p91.z,p92.z,p93.z,p94.z,p95.z,p96.z,p97.z,p98.z,p99.z,p100.z,p101.z,p102.z,p103.z,p104.z,p105.z,p106.z,p107.z,p108.z,p109.z,p110.z,p111.z,p112.z,p113.z,p114.z,p115.z,p116.z,p117.z,p118.z,p119.z,p120.z,p121.z
+   VAR=z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,z11,z12,z13,z14,z15,z16,z17,z18,z19,z20,z21,z22,z23,z24,z25,z26,z27,z28,z29,z30,z31,z32,z33,z34,z35,z36,z37,z38,z39,z40,z41,z42,z43,z44,z45,z46,z47,z48,z49,z50,z51,z52,z53,z54,z55,z56,z57,z58,z59,z60,z61,z62,z63,z64,z65,z66,z67,z68,z69,z70,z71,z72,z73,z74,z75,z76,z77,z78,z79,z80,z81,z82,z83,z84,z85,z86,z87,z88,z89,z90,z91,z92,z93,z94,z95,z96,z97,z98,z99,z100,z101,z102,z103,z104,z105,z106,z107,z108,z109,z110,z111,z112,z113,z114,z115,z116,z117,z118,z119,z120,z121 
+   FUNC=(1+erf(4*(z1+8)-2))/2+(1+erf(4*(z2+8)-2))/2+(1+erf(4*(z3+8)-2))/2+(1+erf(4*(z4+8)-2))/2+(1+erf(4*(z5+8)-2))/2+(1+erf(4*(z6+8)-2))/2+(1+erf(4*(z7+8)-2))/2+(1+erf(4*(z8+8)-2))/2+(1+erf(4*(z9+8)-2))/2+(1+erf(4*(z10+8)-2))/2+(1+erf(4*(z11+8)-2))/2+(1+erf(4*(z12+8)-2))/2+(1+erf(4*(z13+8)-2))/2+(1+erf(4*(z14+8)-2))/2+(1+erf(4*(z15+8)-2))/2+(1+erf(4*(z16+8)-2))/2+(1+erf(4*(z17+8)-2))/2+(1+erf(4*(z18+8)-2))/2+(1+erf(4*(z19+8)-2))/2+(1+erf(4*(z20+8)-2))/2+(1+erf(4*(z21+8)-2))/2+(1+erf(4*(z22+8)-2))/2+(1+erf(4*(z23+8)-2))/2+(1+erf(4*(z24+8)-2))/2+(1+erf(4*(z25+8)-2))/2+(1+erf(4*(z26+8)-2))/2+(1+erf(4*(z27+8)-2))/2+(1+erf(4*(z28+8)-2))/2+(1+erf(4*(z29+8)-2))/2+(1+erf(4*(z30+8)-2))/2+(1+erf(4*(z31+8)-2))/2+(1+erf(4*(z32+8)-2))/2+(1+erf(4*(z33+8)-2))/2+(1+erf(4*(z34+8)-2))/2+(1+erf(4*(z35+8)-2))/2+(1+erf(4*(z36+8)-2))/2+(1+erf(4*(z37+8)-2))/2+(1+erf(4*(z38+8)-2))/2+(1+erf(4*(z39+8)-2))/2+(1+erf(4*(z40+8)-2))/2+(1+erf(4*(z41+8)-2))/2+(1+erf(4*(z42+8)-2))/2+(1+erf(4*(z43+8)-2))/2+(1+erf(4*(z44+8)-2))/2+(1+erf(4*(z45+8)-2))/2+(1+erf(4*(z46+8)-2))/2+(1+erf(4*(z47+8)-2))/2+(1+erf(4*(z48+8)-2))/2+(1+erf(4*(z49+8)-2))/2+(1+erf(4*(z50+8)-2))/2+(1+erf(4*(z51+8)-2))/2+(1+erf(4*(z52+8)-2))/2+(1+erf(4*(z53+8)-2))/2+(1+erf(4*(z54+8)-2))/2+(1+erf(4*(z55+8)-2))/2+(1+erf(4*(z56+8)-2))/2+(1+erf(4*(z57+8)-2))/2+(1+erf(4*(z58+8)-2))/2+(1+erf(4*(z59+8)-2))/2+(1+erf(4*(z60+8)-2))/2+(1+erf(4*(z61+8)-2))/2+(1+erf(4*(z62+8)-2))/2+(1+erf(4*(z63+8)-2))/2+(1+erf(4*(z64+8)-2))/2+(1+erf(4*(z65+8)-2))/2+(1+erf(4*(z66+8)-2))/2+(1+erf(4*(z67+8)-2))/2+(1+erf(4*(z68+8)-2))/2+(1+erf(4*(z69+8)-2))/2+(1+erf(4*(z70+8)-2))/2+(1+erf(4*(z71+8)-2))/2+(1+erf(4*(z72+8)-2))/2+(1+erf(4*(z73+8)-2))/2+(1+erf(4*(z74+8)-2))/2+(1+erf(4*(z75+8)-2))/2+(1+erf(4*(z76+8)-2))/2+(1+erf(4*(z77+8)-2))/2+(1+erf(4*(z78+8)-2))/2+(1+erf(4*(z79+8)-2))/2+(1+erf(4*(z80+8)-2))/2+(1+erf(4*(z81+8)-2))/2+(1+erf(4*(z82+8)-2))/2+(1+erf(4*(z83+8)-2))/2+(1+erf(4*(z84+8)-2))/2+(1+erf(4*(z85+8)-2))/2+(1+erf(4*(z86+8)-2))/2+(1+erf(4*(z87+8)-2))/2+(1+erf(4*(z88+8)-2))/2+(1+erf(4*(z89+8)-2))/2+(1+erf(4*(z90+8)-2))/2+(1+erf(4*(z91+8)-2))/2+(1+erf(4*(z92+8)-2))/2+(1+erf(4*(z93+8)-2))/2+(1+erf(4*(z94+8)-2))/2+(1+erf(4*(z95+8)-2))/2+(1+erf(4*(z96+8)-2))/2+(1+erf(4*(z97+8)-2))/2+(1+erf(4*(z98+8)-2))/2+(1+erf(4*(z99+8)-2))/2+(1+erf(4*(z100+8)-2))/2+(1+erf(4*(z101+8)-2))/2+(1+erf(4*(z102+8)-2))/2+(1+erf(4*(z103+8)-2))/2+(1+erf(4*(z104+8)-2))/2+(1+erf(4*(z105+8)-2))/2+(1+erf(4*(z106+8)-2))/2+(1+erf(4*(z107+8)-2))/2+(1+erf(4*(z108+8)-2))/2+(1+erf(4*(z109+8)-2))/2+(1+erf(4*(z110+8)-2))/2+(1+erf(4*(z111+8)-2))/2+(1+erf(4*(z112+8)-2))/2+(1+erf(4*(z113+8)-2))/2+(1+erf(4*(z114+8)-2))/2+(1+erf(4*(z115+8)-2))/2+(1+erf(4*(z116+8)-2))/2+(1+erf(4*(z117+8)-2))/2+(1+erf(4*(z118+8)-2))/2+(1+erf(4*(z119+8)-2))/2+(1+erf(4*(z120+8)-2))/2+(1+erf(4*(z121+8)-2))/2+(1+erf(4*(z25-8)-2))/2+(1+erf(4*(z25-7)-2))/2+(1+erf(4*(z25-6)-2))/2+(1+erf(4*(z25-5)-2))/2+(1+erf(4*(z25-4)-2))/2+(1+erf(4*(z25-3)-2))/2+(1+erf(4*(z25-2)-2))/2+(1+erf(4*(z25-1)-2))/2+(1+erf(4*(z25+0)-2))/2+(1+erf(4*(z25+1)-2))/2+(1+erf(4*(z25+2)-2))/2+(1+erf(4*(z25+3)-2))/2+(1+erf(4*(z25+4)-2))/2+(1+erf(4*(z25+5)-2))/2+(1+erf(4*(z25+6)-2))/2+(1+erf(4*(z25+7)-2))/2
+PERIODIC=NO
+...
+
+cv2: ENERGY
+
+cv3: CUSTOM ...
+ARG=p121.z
+VAR=z121
+   FUNC=z121
+PERIODIC=NO
+...
+lwall: LOWER_WALLS ARG=cv AT=3.0 KAPPA=1000
+uwall: UPPER_WALLS ARG=cv AT=134.0 KAPPA=1000
+metad: METAD ARG=cv PACE=500 HEIGHT=0.005 SIGMA=0.7 GRID_MIN=0 GRID_MAX=137 GRID_BIN=1000 FILE=HILLS_16 RESTART=YES
+PRINT ARG=cv,cv2,cv3 FILE=COLVAR_16 STRIDE=1000
