@@ -1,0 +1,71 @@
+ ###electrical_field
+ 
+ 
+units		lj
+boundary		p p p
+atom_style	full
+pair_style	lj/cut/coul/debye 0.3080 1.1224 10
+dielectric 	80
+pair_modify     	shift yes
+bond_style      	harmonic
+read_restart 	restartmain_6.plumed
+bond_coeff	1 15480 1
+mass 		1 1 
+mass		2 1
+mass		3 1
+pair_coeff	1 1 1 1 1.1224
+pair_coeff	1 3 1 1 1.1224
+pair_coeff	1 2 1 0.625 0.7015
+pair_coeff	2 3 1 0.625 0.7015
+pair_coeff	3 3 1 1 1.1224
+pair_coeff	2 2 1 0.25 0.2806
+neigh_modify	exclude type 3 3 
+neigh_modify	exclude type 2 2
+neigh_modify	exclude type 2 3
+neigh_modify	one 5000
+comm_modify        	cutoff 3.6
+special_bonds 	lj/coul 0.0 0.0 0.0 
+group 		allpore id 1:5516
+group 		allpoly id 1:121
+group		last id 121
+group		non_last id 1:120
+group		pore id 122:12884
+group		poly molecule 1
+region 		inside_pore1 cylinder z 0 0 3.2 -8 8 side in units box 
+velocity		pore set 0.0 0.0 0.0
+#velocity 		last set 0.0 0.0 0.0
+#velocity 		non_last create 1 26464 mom yes units box 
+log 		log.6 append
+variable		z121 equal "z[121]"
+variable		x121 equal "x[121]"
+variable		y121 equal "y[121]"
+variable		z61 equal "z[61]"
+timestep 		0.005
+#fix		f_staticpore pore setforce 0.0 0.0 0.0
+#fix		f_staticxy121 last setforce 0.0 0.0 0.0	
+#fix 		f_nve non_last nve/limit 0.1
+#fix		f_langevin non_last langevin 1 1 1 960863
+compute		mytemp allpoly temp
+thermo_modify	temp mytemp 
+thermo_style	custom step temp etotal ebond epair pe ke ecoul v_z121
+thermo		1000
+#run 		10000
+#unfix 		f_staticxy121
+#unfix 		f_nve
+#unfix 		f_langevin
+#velocity 	allpoly create 1 32830 mom yes units box 
+fix 		f_nve allpoly nve/limit 0.1
+fix		f_langevin allpoly langevin 1 1 1 960863
+fix 		f_plumed all plumed plumedfile plumed_6.dat outfile output_6
+fix_modify 	f_plumed energy yes
+fix		f_balance all balance 1000 1.05 shift xy 10 1.05
+dump 		poly_out allpore custom 100000 elfield_6.lammpstrj id x y z 
+dump_modify	poly_out append yes 
+variable 		desired_z_min equal -8
+variable 		desired_z_max equal 8
+variable 		nbeads equal 121
+compute 		bead_z allpoly property/atom z
+variable		z121 equal "z[121]"
+variable 		z61 equal "z[61]"
+run	 	60000000
+write_restart	restartmain_6.plumed
